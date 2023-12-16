@@ -2,7 +2,7 @@
 
 const AWS = require('aws-sdk');
 const Chance = require('chance');
-const { sqsClient, QUEUES } = require('../util');
+const { QUEUES } = require('../util');
 
 AWS.config.update({ region: 'us-east-1' });
 const sns = new AWS.SNS();
